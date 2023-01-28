@@ -1,0 +1,144 @@
+.testimonials-section {
+    position: relative;
+    height: 240rem;
+    overflow: hidden;
+    background-color: white;
+    z-index: 1;
+    background-image: transparent;
+    background-size: 100% 100%;
+    background-position: center;
+    &__mobile-bg {
+        user-select: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba($black, 0.7), rgba($black, 0.1)), url(images/testimonial-image.jpg);
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    &__header {
+        background-image: linear-gradient(to right, $cyan, $blue-coral);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 7rem;
+        @include respond(phone) {
+            font-size: 5.5rem;
+        }
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 5%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        text-transform: uppercase;
+        z-index: 1.5;
+    }
+    &__testimonial {
+        background-color: rgba(rgb(255, 255, 255), 0.9);
+        border-radius: 0.6rem;
+        position: absolute;
+        width: 40%;
+        text-align: center;
+        &--arrow {
+            background-image: url(images/arrow.png);
+            background-size: 100% 100%;
+            height: 15%;
+            @include respond(tab-port) {
+                height: 12.5%;
+            }
+            @include respond(phone) {
+                height: 10%;
+            }
+            width: 20%;
+            position: absolute;
+            left: 65%;
+            top: 17.5%;
+            animation: move-arrow 0.7s infinite;
+            background-repeat: no-repeat;
+        }
+        &--1 {
+            top: 15%;
+            left: 10%;
+        }
+        &--2 {
+            left: 10%;
+            top: 62%;
+            @include respond(phone) {
+                top: 70%;
+            }
+        }
+        &--3 {
+            left: 55%;
+            top: 50%;
+        }
+        &--4 {
+            left: 55%;
+            top: 60%;
+        }
+        &--5 {
+            left: 55%;
+            top: 68%;  
+        }
+        &--6 {
+            left: 55%;
+            top: 75.5%;
+        }
+        &--7 {
+            left: 55%;
+            top: 84%;
+        }
+        &--8 {
+            left: 55%;
+            top: 91.5%;
+        }
+        &--9 {
+            left: 55%;
+            top: 42.5%;
+        }
+        &--header {
+            background-image: linear-gradient(to right, $darker-blue, $blue-coral);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 4.5rem;
+            @include respond(big-desktop) {
+                font-size: 5rem;
+            }
+            @include respond(tab-land) {
+                font-size: 4.5rem;
+            }
+            @include respond(tab-port) {
+                font-size: 3.5rem;
+            }
+            @include respond(phone) {
+                font-size: 3rem;
+            }
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid rgb(50, 50, 50);
+        }
+        &--para {
+            font-size: 1.25rem;
+            @include respond(big-desktop) {
+                font-size: 1.5rem;
+            }
+            @include respond(tab-land) {
+                font-size: 1.15rem;
+            }
+            @include respond(tab-port) {
+                font-size: 1.25rem;
+            }
+            @include respond(phone) {
+                font-size: 1.25rem;
+            }
+            font-family: inherit;
+            color: rgb(50, 50, 50);
+        }
+    }
+
+    &--open {
+        .testimonials-section__header, .testimonials-section__testimonial--1, .testimonials-section__testimonial--2 {
+            position: fixed;
+        }
+    }
+}

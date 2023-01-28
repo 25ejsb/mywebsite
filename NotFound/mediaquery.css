@@ -1,0 +1,62 @@
+@media only screen and (min-width:75em) {
+    .header {
+        font-size: 6.75rem;
+    }
+    .header2 {
+        font-size: 4rem;
+    }
+    .back-btn {
+        font-size: 3.5rem;
+    }
+    .logo {
+        width: 10%;
+    }
+}
+
+@media only screen and (max-width:61.9em) {
+    .header {
+        font-size: 5.25rem;
+    }
+    .header2 {
+        font-size: 3.5rem;
+    }
+    .back-btn {
+        font-size: 2.75rem;
+        left: 46.5%;
+    }
+    .logo {
+        width: 12.5%;
+    }
+}
+
+@media only screen and (max-width:48em) {
+    .header {
+        font-size: 4.25rem;
+    }
+    .header2 {
+        font-size: 2.75rem;
+    }
+    .back-btn {
+        font-size: 2.5rem;
+    }
+    .logo {
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width:36em) {
+    .header {
+        font-size: 3.25rem;
+    }
+    .header2 {
+        font-size: 2.5rem;
+    }
+    .back-btn {
+        font-size: 2.25rem;
+        left: 44%
+    }
+    .logo {
+        left: 50%;
+        width: 25%;
+    }
+}

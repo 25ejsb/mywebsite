@@ -1,0 +1,30 @@
+.btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .5s;
+    display: inline-block;
+    padding: 1rem 3rem;
+
+    &:not(:last-child) {
+        margin-right: 3rem;
+    }
+
+    &:hover {
+        outline: none;
+        transform: translateY(-3px);
+        box-shadow: 0 0.5rem 1rem rgba($black, 0.5);
+    }
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba($black, 0.5);
+    }
+    &__fullfont {
+        background-color: $fullfont-bg;
+        padding: 1.3rem;
+        font-family: inherit;
+        border-radius: 3rem;
+        color: white;
+        font-size: 2rem;
+        transition: all .5s;
+    }
+}

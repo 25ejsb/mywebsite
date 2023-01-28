@@ -1,0 +1,45 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media only screen and (max-width:36em) {
+            @content;
+        }
+    }
+    @if $breakpoint==tab-port {
+        @media only screen and (max-width:48em) {
+            @content;
+        }
+    }
+    @if $breakpoint==tab-land {
+        @media only screen and (max-width:61.9em) {
+            @content;
+        }
+    }
+    @if $breakpoint==big-desktop {
+        @media only screen and (min-width:75em) {
+            @content;
+        }
+    }
+    @if $breakpoint==phone-advanced {
+        @media only screen and (max-device-width: 36em) {
+            @content;
+        }
+    }
+}
+
+@media only screen and (max-height: 61.9em) {
+    .testimonials-section__testimonial--para {
+        font-size: 1.15rem;
+    }
+}
+
+@media only screen and (max-height:48em) {
+    .testimonials-section__testimonial--para {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-height: 36em) {
+    .testimonials-section__testimonial--para {
+        font-size: 0.75rem;
+    }
+}

@@ -1,0 +1,366 @@
+.contact-section {
+    height: 75rem;
+    position: relative;
+    z-index: 2;
+    background-color: $dark;
+    overflow: hidden;
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 2.5%;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        filter: blur(0.01rem);
+        @mixin section-basics {
+            border-radius: 0.4rem;
+            height: 90%;
+            width: 29%;
+            @include respond(big-desktop) {
+                width: 29%;
+            }
+            @include respond(tab-land) {
+                width: 29%;
+            }
+            @include respond(tab-port) {
+                width: 27%;
+            }
+            @include respond(phone) {
+                width: 25%;
+            }
+            margin-top: 5rem;
+            margin-left: 3rem;
+            display: inline-block;
+            background-size: 100% 100%;
+            @include respond(big-desktop) {
+                background-size: 100% 100%;
+            }
+            @include respond(tab-land) {
+                background-size: 115% 115%;
+            }
+            @include respond(tab-port) {
+                background-size: 130% 130%;
+            }
+            @include respond(phone) {
+                background-size: 145% 145%;
+            }
+            background-position: center;
+            user-select: none;
+        }
+        &--1 {
+            @include section-basics;
+            background-image: url(images/header2.jpg);
+        }
+        &--2 {
+            @include section-basics;
+            background-image: url(images/tookanimage.webp);
+        }
+        &--3 {
+            @include section-basics;
+            background-image: url(images/header8.jpg);
+        }
+    }
+    &__main {
+        background-color: rgba(white, 0.7);
+        border-radius: 0.7rem;
+        position: absolute;
+        top: 20%;
+        left: 25%;
+        @include respond(phone) {
+            left: 22.5%;
+        }
+        text-align: center;
+        width: 50%;
+        @include respond(phone) {
+            width: 60%;
+        }
+        height: 70%;
+        &--name {
+            width: 80%;
+            height: 10%;
+            margin-top: 5rem;
+            margin-bottom: 3.5rem;
+            border: none;
+            border-bottom: 3px solid $light-gray;
+            box-shadow: 0 0.5rem 1rem rgba($black, 0.5);
+            font-family: inherit;
+            font-size: 2rem;
+            color: black;
+            &:focus {
+                outline: none;
+            }
+        }
+
+         &--email {
+             width: 80%;
+             height: 10%;
+             border: none;
+             border-bottom: 3px solid $light-gray;
+             box-shadow: 0 0.5rem 1rem rgba($black, 0.5);
+             font-family: inherit;
+             font-size: 2rem;
+             margin-bottom: 4rem;
+             color: black;
+             &:focus {
+                outline: none;
+             }
+        }
+        &--message {
+            width: 80%;
+            height: 23%;
+            border: none;
+            border-bottom: 3px solid $light-gray;
+            box-shadow: 0 0.5rem 1rem rgba($black, 0.5);
+            font-family: inherit;
+            font-size: 2rem;
+            color: black;
+            resize: vertical;
+            &:focus {
+                outline: none;
+            }
+        }
+        &--send {
+            position: absolute;
+            left: 10%;
+            top: 85%;
+            width: 20%;
+            @include respond(big-desktop) {
+                width: 20%;
+            }
+            @include respond(tab-land) {
+                width: 22.5%;
+            }
+            @include respond(tab-port) {
+                width: 25%;
+            }
+            @include respond(phone) {
+                width: 30%;
+            }
+            height: 9%;
+            background-image: linear-gradient(to right bottom, $nice-red, red);
+            text-decoration: none;
+            color: white;
+            padding: 1.25rem;
+            font-size: 2.5rem;
+            border-radius: 0.6rem;
+            box-shadow: 0 0.5rem 1rem rgba($black, 0.5);
+            text-transform: uppercase;
+            &:hover {
+                transition: all .5s;
+                background-image: linear-gradient(to right, $light-green, $dark-green);
+            }
+        }
+        &--whatsapp {
+            background-color: green;
+            width: 25%;
+            @include respond(big-desktop) {
+                width: 18%;
+            }
+            @include respond(tab-land) {
+                width: 29%;
+            }
+            @include respond(tab-port) {
+                width: 36%;
+            }
+            @include respond(phone) {
+                width: 42%;
+            }
+            height: 9%;
+            position: absolute;
+            left: 40%;
+            @include respond(phone) {
+                left: 45%;
+            }
+            top: 85%;
+            text-decoration: none;
+            font-size: 1.5rem;
+            @include respond(phone) {
+                font-size: 1.75rem;
+            }
+            padding: 1.6rem;
+            text-align: right;
+            border-radius: 0.4rem;
+            color: white;
+            overflow: hidden;
+            box-shadow: 0 0.5rem 1rem rgba($black, 0.5);
+        }
+
+        &__whatsappicon {
+            position: absolute;
+            background-image: url(images/whatsapp.png);
+            background-size: 100% 100%;
+            background-position: center;
+            width: 30%;
+            height: 100%;
+            top: -3%;
+            left: -0%;
+        }
+
+        &--sendtext {
+            width: 100%;
+            height: 100%;
+            font-size: 2rem;
+            z-index: 2;
+        }
+
+        &--field {
+            background-image: linear-gradient($nice-red, red);
+            -webkit-background-clip: text;
+            color: transparent;
+            position: absolute;
+            text-align: center;
+            font-size: 2rem;
+            @include respond(big-desktop) {
+                font-size: 2rem;
+            }
+            @include respond(tab-land) {
+                font-size: 1.75rem;
+            }
+            @include respond(tab-port) {
+                font-size: 1.5rem;
+            }
+            @include respond(phone) {
+                font-size: 1.25rem;
+            }
+            &--1 {
+                display: none;
+                left: 25%;
+                @include respond(big-desktop) {
+                    left: 25%;
+                }
+                @include respond(tab-land) {
+                    left: 27.5%;
+                }
+                @include respond(tab-port) {
+                    left: 29.5%;
+                }
+                @include respond(phone) {
+                    left: 30%;
+                }
+                top: 22.5%;
+                @include respond(tab-land) {
+                    top: 20%;
+                }
+                @include respond(phone) {
+                    top: 20%;
+                }
+                transform: translate(-50%, -200%);
+                transition: all .5s;
+                opacity: 0;
+                &--open {
+                    transform: translate(-50%, -50%);
+                    opacity: 1;
+                    display: block;
+                }
+            }
+            &--2 {
+                display: none;
+                left: 25%;
+                @include respond(big-desktop) {
+                    left: 25%;
+                }
+                @include respond(tab-land) {
+                    left: 27.5%;
+                }
+                @include respond(tab-port) {
+                    left: 29.5%;
+                }
+                @include respond(phone) {
+                    left: 30%;
+                }
+                top: 40%;
+                @include respond(tab-land) {
+                    top: 37%;
+                }
+                @include respond(phone) {
+                    top: 37%;
+                }
+                transform: translate(-50%, -200%);
+                transition: all .5s;
+                opacity: 0;
+                &--open {
+                    transform: translate(-50%, -50%);
+                    opacity: 1;
+                    display: block;
+                }
+            }
+            &--3 {
+                left: 25%;
+                display: none;
+                @include respond(big-desktop) {
+                    left: 25%;
+                }
+                @include respond(tab-land) {
+                    left: 27.5%;
+                }
+                @include respond(tab-port) {
+                    left: 29.5%;
+                }
+                @include respond(phone) {
+                    left: 30%;
+                }
+                top: 71%;
+                @include respond(tab-land) {
+                    top: 67%;
+                }
+                @include respond(phone) {
+                    top: 65%;
+                }
+                transform: translate(-50%, -200%);
+                transition: all .5s;
+                opacity: 0;
+                &--open {
+                    transform: translate(-50%, -50%);
+                    opacity: 1;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &__header {
+        font-size: 7rem;
+        @include respond(big-desktop) {
+            font-size: 7rem;
+        }
+        @include respond(tab-land) {
+            font-size: 6rem;
+        }
+        @include respond(tab-port) {
+            font-size: 5.5rem;
+        }
+        @include respond(phone) {
+            font-size: 4rem;
+        }
+        text-align: center;
+        margin-top: 3rem;
+        background-image: linear-gradient(to right bottom, $nice-red, red);
+        -webkit-background-clip: text;
+        color: transparent;
+        text-transform: uppercase;
+    }
+
+    &__thanks {
+        background-image: linear-gradient(to right bottom, $light-green, $dark-green);
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-top: 3rem;
+        font-size: 2rem;
+        @include respond(tab-land) {
+            font-size: 1.75rem;
+        }
+        @include respond(tab-port) {
+            font-size: 1.5rem;
+        }
+        @include respond(phone) {
+            font-size: 1.25rem;
+        }
+        opacity: 0;
+        transform: translate(0, -70%);
+        transition: all .5s;
+        &--active {
+            opacity: 1;
+            transform: translate(0%, 0%);
+        }
+    }
+}
