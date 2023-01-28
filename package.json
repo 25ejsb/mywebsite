@@ -1,0 +1,17 @@
+{
+  "name": "eitanbrochstein",
+  "version": "1.0.0",
+  "description": "my personal website",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss style.css",
+    "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "nodemon": "^2.0.20",
+    "sass": "^1.57.1"
+  }
+}
