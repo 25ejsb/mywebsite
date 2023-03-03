@@ -1,0 +1,55 @@
+.about-section {
+    position: relative;
+    overflow: hidden;
+    height: 150rem;
+    &__header {
+        text-align: center;
+        color: black;
+        font-size: 6rem;
+        text-transform: uppercase;
+        background-image: linear-gradient(to right, $color-primary-dark, $color-primary, $color-primary-dark);
+        color: transparent;
+        -webkit-background-clip: text;
+        transition: all .5s;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        letter-spacing: 4px;
+        &:hover {
+            transform: skewX(11deg) skewY(2deg) scale(1);
+            text-shadow: .5rem 2rem 2rem rgba(black, .2);
+        }
+    }
+    &__articletitle {
+        background-image: linear-gradient(to right, $color-primary-dark, $color-primary, $color-primary-dark);
+        color: transparent;
+        -webkit-background-clip: text;
+        text-align: center;
+        font-size: 6rem;
+    }
+    &__aboutme {
+        display: flex;
+        flex-direction: row;
+        height: 30%;
+        width: 90%;
+        margin: auto;
+        &--1 {
+            width: 50%;
+            height: 100%;
+        }
+        &--2 {
+            width: 50%;
+            height: 100%;
+            
+        }
+        &--para {
+            color: #404040;
+            font-size: 2rem;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        background-image: linear-gradient(to right, $color-primary-dark, $color-primary, $color-primary-dark);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+}
