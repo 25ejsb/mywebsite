@@ -44,24 +44,28 @@
             background-size: 100% 100%;
             background-position: center;
             animation: fade1 infinite 20s;
+            object-fit: cover;
         }
         &--2 {
             background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(images/header2.jpg);
             background-size: 100% 100%;
             background-position: center;
             animation: fade2 infinite 20s;
+            object-fit: cover;
         }
         &--3 {
             background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(images/header3.jpg);
             background-size: 100% 100%;
             background-position: center;
             animation: fade3 infinite 20s;
+            object-fit: cover;
         }
         &--4 {
             background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(images/header4.jpg);
             background-size: 100% 100%;
             background-position: center;
             animation: fade4 infinite 20s;
+            object-fit: cover;
         }
     }
     &__desc {

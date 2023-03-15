@@ -1,0 +1,117 @@
+.amenity-box {
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($black, .15);
+    width: 28rem;
+    height: 40rem;
+    position: relative;
+    color: $white;
+    margin-bottom: 6rem;
+    overflow: hidden;
+
+    @include respond(tab-port) {
+        width: 50rem;
+        margin: 1.5rem auto;
+    }
+
+    &--1 {
+        background-image: linear-gradient(to right bottom, rgba($primary-light, 0.5), rgba($primary-dark, 0.5)), url(images/wedding.jpg);
+        background-size: 100% 100%;
+        display: inline-block;
+    }
+
+    &--2 {
+        background-image: linear-gradient(to right bottom, rgba($primary-light, 0.5), rgba($primary-dark, 0.5)), url(images/golf.jpg);
+        background-size: 100% 100%;
+        display: inline-block;
+    }
+
+    &--3 {
+        background-image: linear-gradient(to right bottom, rgba($primary-light, 0.5), rgba($primary-dark, 0.5)), url(images/boating.jpg);
+        background-size: 100% 100%;
+        display: inline-block;
+    }
+
+    &--4 {
+        background-image: linear-gradient(to right bottom, rgba($primary-light, 0.5), rgba($primary-dark, 0.5)), url(images/clubhouse.webp);
+        background-size: 100% 100%;
+        display: inline-block;
+    }
+
+    &__title {
+        font-size: 4rem;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        @include center-object;
+        color: $white;
+        transition: opacity .2s;
+        @include respond(tab-port) {
+            opacity: 0;
+        }
+    }
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 28rem;
+        height: 40rem;
+        background-position: center;
+        background-size: 100% 100%;
+        background-image: linear-gradient(to right bottom, $primary-light, $primary-dark);
+        opacity: 0;
+        transition: opacity .2s;
+        
+        @include respond(tab-port) {
+            width: 50rem;
+            opacity: .7;
+        }
+    }
+
+    &:hover &__overlay {
+        opacity: .7;
+    }
+
+    &:hover &__title {
+        opacity: 0;
+    }
+
+    &__content {
+        position: absolute;
+        top: 10%;
+        @include center-object;
+        width: 85%;
+        opacity: 0;
+        transition: all .2s;
+        @include respond(tab-port) {
+            opacity: 1;
+            top: 50%;
+        }
+    }
+
+    &:hover &__content {
+        opacity: 1;
+        top: 50%;
+        @include respond(tab-port) {
+            opacity: 1;
+        }
+    }
+
+    &__icon {
+        font-size: 6rem;
+        margin-bottom: .5rem;
+        background-size: 90% 90%;
+        background-position: center;
+        background-image: linear-gradient(to right bottom, $white, $secondary-light);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    &__heading {
+
+    }
+
+    &__text {
+        font-size: 1.5rem;
+    }
+}

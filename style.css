@@ -62,24 +62,28 @@ body {
   background-size: 100% 100%;
   background-position: center;
   animation: fade1 infinite 20s;
+  object-fit: cover;
 }
 .header__backgrounds--2 {
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(images/header2.jpg);
   background-size: 100% 100%;
   background-position: center;
   animation: fade2 infinite 20s;
+  object-fit: cover;
 }
 .header__backgrounds--3 {
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(images/header3.jpg);
   background-size: 100% 100%;
   background-position: center;
   animation: fade3 infinite 20s;
+  object-fit: cover;
 }
 .header__backgrounds--4 {
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(images/header4.jpg);
   background-size: 100% 100%;
   background-position: center;
   animation: fade4 infinite 20s;
+  object-fit: cover;
 }
 .header__desc {
   font-size: 5rem;
@@ -270,7 +274,7 @@ body {
 .about-section__aboutme {
   display: flex;
   flex-direction: row;
-  height: 30%;
+  height: 25%;
   width: 90%;
   margin: auto;
 }
@@ -281,6 +285,9 @@ body {
 .about-section__aboutme--2 {
   width: 50%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .about-section__aboutme--para {
   color: #404040;
@@ -291,6 +298,38 @@ body {
   background-image: linear-gradient(to right, #d0b274, #f2da1f, #d0b274);
   color: transparent;
   -webkit-background-clip: text;
+}
+.about-section__about-me-image {
+  width: 15rem;
+  height: 20rem;
+  border-radius: 4px;
+  transition: all 0.4s;
+  filter: brightness(0.7);
+}
+.about-section__about-me-image--1 {
+  background-image: url(images/image1.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  transform: rotate(-15deg) translate(1rem, 2rem);
+}
+.about-section__about-me-image--2 {
+  background-image: url(images/image2.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  z-index: 2;
+}
+.about-section__about-me-image--3 {
+  background-image: url(images/image3.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  transform: rotate(15deg) translate(-1rem, 2rem);
+}
+.about-section__about-me-image:hover {
+  z-index: 3;
+  width: 20.5rem;
+  height: 25.5rem;
+  filter: brightness(1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */

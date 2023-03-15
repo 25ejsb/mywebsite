@@ -1,0 +1,108 @@
+html, body {
+    background-color: #efefef;
+    text-rendering: optimizeLegibility;
+}
+
+header {
+    margin-top: 20px;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,.7), rgb(0,0,0)), url(https://yourmileagemayvary.net/wp-content/uploads/2020/02/Screen-Shot-2020-02-08-at-12.09.28-AM.png);
+    padding: 25px;
+    margin: auto;
+    overflow: hidden;
+    background-size: cover;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    box-shadow: 0 3px 2px rgb(10, 10, 10);
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    color: coral;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+    display: inline-block;
+}
+
+.para-1 {
+    width: 500px;
+    display: inline-block;
+}
+
+.para-2 {
+    width: 560px;
+    display: inline-block;
+}
+
+.para-3 {
+    width: 400px;
+    display: inline-block;
+}
+
+.para-2 iframe {
+    width: 90%;
+    height: 255px;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 50px;
+    background-color: #222;
+    padding: 50px;
+    font-size: 80%;
+    color: #888;
+}
+
+.footer-nav li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited {
+    color: #888;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #c25925;
+}
+
+.footer-nav {
+    float: left;
+}
+
+.social-links {
+    float: right;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 150%;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    color: #888;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.social-links li a:hover,
+.social-links li a:active {
+    color: #c25925;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 50px;
+    line-height: 1.5;
+}

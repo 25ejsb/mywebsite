@@ -1,0 +1,160 @@
+/* computer */
+@media only screen and (max-width:1200px)
+{
+    html, body {
+        font-size: 14px;
+    }
+    .about-para {
+        margin-bottom: 20px;
+    }
+    .section-heading,
+    .testiomonial-heading,
+    .packages-heading,
+    .contact-heading {
+        margin-top: 90px;
+    }
+}
+
+/* tablet */
+@media only screen and (max-width:1023px)
+{
+    html, body {
+        font-size: 12px;
+    }
+
+    .row {
+        padding: 0 2%;
+    }
+
+    .about-heading {
+        margin-top: 60px;
+    }
+
+    .about-box:first-child {
+        padding: 0;
+        padding-right: 5px;
+    }
+
+    .bad-image {
+        padding: 0;
+    }
+
+    .package-box {
+        width: 100%;
+    }
+
+    .package-heading {
+        margin-bottom: 25px;
+    }
+
+    footer {
+        padding: 30px;
+    }
+
+    footer p {
+        line-height: 1;
+        margin-top: 20px;
+    }
+
+    .protfolio-image img {
+        height: 240px;
+    }
+}
+
+/* phone */
+@media only screen and (max-width:767px)
+{
+    html, body {
+        font-size: 10px;
+    }
+
+    .header-box-text {
+        margin-bottom: 50px;
+    }
+
+    .about-section {
+        margin-bottom: 20px;
+    }
+    .section-heading,
+    .testiomonial-heading,
+    .packages-heading,
+    .contact-heading {
+        margin-top: 60px;
+    }
+
+    .section-heading {
+        margin-bottom: 10px;
+    }
+
+    /* We put an after to launch this after the main code was written */
+    .section-sub-heading::after {
+        margin: 15px auto 0 auto;
+    }
+
+    .testiomonial-heading {
+        margin-bottom: 10px;
+    }
+
+    .protfolio-image img {
+        height: 170px;
+    }
+}
+
+/* small phone or ipod */
+@media only screen and (max-width:480px)
+{
+    .bad-image {
+        padding: 0;
+        /* auto to center */
+        margin: 0 auto;
+    }
+
+    .about-box:last-child {
+        text-align: center;
+    }
+
+    .about-box:first-child {
+        text-align: center;
+        padding: 10%;
+    }
+
+    .span_1_of_4 {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .span_1_of_3 {
+        padding: 10 10%;
+        margin-bottom: 30px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-label {
+        padding-left: 0;
+    }
+
+    .footer-nav, .social-links {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .protfolio-image img {
+        height: 120px;
+    }
+
+    .partner-logo {
+        height: 100px;
+    }
+
+    .section-heading {
+        margin-bottom: 10px;
+    }
+
+    .section-sub-heading::after {
+        margin: 15px auto 0 auto;
+    }
+}

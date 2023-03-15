@@ -1,0 +1,65 @@
+.btn {
+    &:link,
+    &:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 1rem 3rem;
+        border-radius: 5rem;
+        font-size: $default-font-size;
+        position: relative;
+        border: 2px solid $brown;
+        display: inline-block;
+        transition: all .2s;
+    }
+
+    &:hover {
+        outline: none;
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($black, 0.5);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem, 1rem, rgba($black, 0.5);
+    }
+
+    &--brown {
+        background-color: $brown;
+        color: $grey-light-1;
+        margin-right: 1rem;
+        @include respond(tab-port) {
+            margin: 1rem;
+        }
+    }
+}
+
+.btn-rectangular {
+    &:link,
+    &:visited {
+        color: $brown;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-bottom: 1px solid $brown;
+        padding: 1rem 3rem;
+        font-size: $default-font-size;
+        transition: all 1s;
+    }
+    &--white:hover,
+    &:active,
+    &:hover {
+        background-color: $brown;
+        color: $white;
+        box-shadow: 0 0.5rem 1rem rgba($black, 0.5);
+        transform: translateY(-3px);
+    }
+
+    &--white:link,
+    &--white:visited {
+        color: $white;
+        border-bottom: 1px solid $white;
+    }
+
+    &--white:hover {
+        border-bottom: 1px solid transparent;
+    }
+}

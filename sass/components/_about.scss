@@ -29,7 +29,7 @@
     &__aboutme {
         display: flex;
         flex-direction: row;
-        height: 30%;
+        height: 25%;
         width: 90%;
         margin: auto;
         &--1 {
@@ -39,7 +39,9 @@
         &--2 {
             width: 50%;
             height: 100%;
-            
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         &--para {
             color: #404040;
@@ -51,5 +53,37 @@
         background-image: linear-gradient(to right, $color-primary-dark, $color-primary, $color-primary-dark);
         color: transparent;
         -webkit-background-clip: text;
+    }
+    &__about-me-image {
+        width: 15rem;
+        height: 20rem;
+        border-radius: 4px;
+        transition: all .4s;
+        filter: brightness(0.7);
+        &--1 {
+            background-image: url(images/image1.jpg);
+            background-size: 100% 100%;
+            background-position: center;
+            transform: rotate(-15deg) translate(1rem, 2rem);
+        }
+        &--2 {
+            background-image: url(images/image2.jpg);
+            background-size: 100% 100%;
+            background-position: center;
+            z-index: 2;
+        }
+        &--3 {
+            background-image: url(images/image3.jpg);
+            background-size: 100% 100%;
+            background-position: center;
+            transform: rotate(15deg) translate(-1rem, 2rem);
+        }
+        &:hover {
+            z-index: 3;
+            width: 20.5rem;
+            height: 25.5rem;
+            filter: brightness(1);
+            box-shadow: 0 0.5rem 1rem rgba(black, .5);
+        }
     }
 }
