@@ -95,7 +95,7 @@
         color: transparent;
         -webkit-background-clip: text;
         transition: all .5s;
-        padding-top: 5rem;
+        padding-top: 2rem;
         padding-bottom: 1rem;
         letter-spacing: 4px;
         &:hover {
@@ -166,7 +166,7 @@
             color: transparent;
             -webkit-background-clip: text;
             margin: 0 auto;
-            height: 60%;
+            height: 38%;
             font-weight: 600;
             transition: all .6s;
             opacity: 1;
@@ -175,6 +175,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
+            border-bottom: 2px solid rgb(170, 170, 170);
         }
         &--paraclone {
             font-size: 2.5rem;
@@ -183,7 +184,7 @@
             color: transparent;
             -webkit-background-clip: text;
             margin: 0 auto;
-            height: 60%;
+            height: 38%;
             font-weight: 600;
             transition: all .6s;
             opacity: 0;
@@ -192,6 +193,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
+            border-bottom: 2px solid rgb(170, 170, 170);
         }
         &--1:hover &--headerimg {
             filter: brightness(1);
