@@ -86,4 +86,139 @@
             box-shadow: 0 0.5rem 1rem rgba(black, .5);
         }
     }
+    &__myprojectstitle {
+        text-align: center;
+        color: black;
+        font-size: 6rem;
+        text-transform: uppercase;
+        background-image: linear-gradient(to right, $color-primary-dark, $color-primary, $color-primary-dark);
+        color: transparent;
+        -webkit-background-clip: text;
+        transition: all .5s;
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+        letter-spacing: 4px;
+        &:hover {
+            transform: skewX(11deg) skewY(2deg) scale(1);
+            text-shadow: .5rem 2rem 2rem rgba(black, .2);
+        }
+    }
+    &__myprojects {
+        width: 100%;
+        height: 33%;
+        z-index: 2;
+        display: flex;
+        text-decoration: none;
+        position: relative;
+        &--1 {
+            width: 33.3%;
+            height: 100%;
+            flex-direction: column;
+        }
+        &--2 {
+            width: 33.3%;
+            height: 100%;
+            flex-direction: column;
+        }
+        &--3 {
+            width: 33.3%;
+            height: 100%;
+            flex-direction: column;
+        }
+        &--headerimg {
+            width: 70%;
+            height: 35%;
+            margin: 0 auto;
+            &__1 {
+                background-image: url(images/younoob.jpg);
+                background-size: 100% 100%;
+                background-position: center;
+            }
+            &__2 {
+                background-image: url(images/assman.webp);
+                background-size: 100% 100%;
+                background-position: center;
+            }
+            &__3 {
+                background-image: url(images/adam.jpg);
+                background-size: 100% 100%;
+                background-position: center;
+            }
+            box-shadow: 0 0.5rem 1rem rgba(black, 0.5);
+            filter: brightness(0.7);
+            transition: all .6s;
+        }
+        &--headertitle {
+            font-size: 3rem;
+            color: rgb(170, 170, 170);
+            text-transform: uppercase;
+            -webkit-background-clip: text;
+            width: 100%;
+            height: 10%;
+            text-align: center;
+            font-weight: 600;
+        }
+        &--para {
+            text-align: center;
+            font-size: 2.5rem;
+            width: 80%;
+            background-image: linear-gradient(rgba($color-darkgrey-2, 1), rgba($color-darkgrey-2, 1));
+            color: transparent;
+            -webkit-background-clip: text;
+            margin: 0 auto;
+            height: 60%;
+            font-weight: 600;
+            transition: all .6s;
+            opacity: 1;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        &--paraclone {
+            font-size: 2.5rem;
+            width: 80%;
+            background-image: linear-gradient(to right, $color-primary-dark, $color-primary, $color-primary-dark);
+            color: transparent;
+            -webkit-background-clip: text;
+            margin: 0 auto;
+            height: 60%;
+            font-weight: 600;
+            transition: all .6s;
+            opacity: 0;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        &--1:hover &--headerimg {
+            filter: brightness(1);
+        }
+        &--1:hover &--paraclone {
+            opacity: 1;
+        }
+        &--1:hover &--para {
+            opacity: 0;
+        }
+        &--2:hover &--headerimg {
+            filter: brightness(1);
+        }
+        &--2:hover &--paraclone {
+            opacity: 1;
+        }
+        &--2:hover &--para {
+            opacity: 0;
+        }
+        &--3:hover &--headerimg {
+            filter: brightness(1);
+        }
+        &--3:hover &--paraclone {
+            opacity: 1;
+        }
+        &--3:hover &--para {
+            opacity: 0;
+        }
+    }
 }
